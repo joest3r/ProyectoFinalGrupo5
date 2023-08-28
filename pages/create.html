@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,31 +12,51 @@
             
                 <a href="../home.html">
                 <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
-                <p>FUNKOSHOP</p>
                 </a>
             </picture>
             
             <ul>
                 <li>
-                    <a href="./shop.html">SHOP</a>
+                    <a href="./shop.html">VER TIENDA</a>
                 </li>
                 <li>
-                    <a href="./contacto.html">CONTACTO</a>
+                    <a href="./admin.html">ADMIN</a>
                 </li>
                 <li>
-                    <a href="./login.html">LOGIN</a>
+                    <a href="../home.html">SALIR</a>
                 </li>
-                <li>
-                    <a href="./carrito.html">
-                        <img src="../img/icons/cart-icon.svg" alt="Icono del carrito de compras">
-                    </a>
-                        
-                    </a>
-                </li>
+                
             </ul>
         </nav>
     </header> <!--Fin header-->
     <main>
+        <section>
+        <h2>CREAR UN NUEVO ITEM</h2>
+        <div> 
+            <label for="cat">Categoria: </label><select name="cat" id="cat"> <option value="" disabled selected>Seleccionar</option></select>
+            <label for="license">Licencia: </label><select name="license" id="license"> <option value="" disabled selected>Seleccionar</option></select>
+        </div>
+        <div>
+            <label for="nameproduct">Nombre del producto:</label><input type="text" id="nameproduct" placeholder="Kakashi Hatake Shippuden Saga">
+            
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+            
+            <label for="sku">SKU:</label><input type="text" id="sku" placeholder="SSK111AB001">
+            <label for="price">Precio:</label><input type="text" id="price" placeholder="0.000,00">
+            <label for="stock">Stock:</label><input type="text" id="stock" placeholder="0">
+            <label for="discount">Descuento:</label><input type="text" placeholder="0%">
+            <label for="installment">Cuotas:</label><select name="installment" id="installment"> <option value="" disabled selected>3 Cuotas sin interés</option></select>
+            <label for="myFile">Imágenes:</label><input type="file" id="myFile" name="filename">
+        </div>
+        </section>
+
+        <section>
+            <button>Agregar Producto</button>
+            <button>Limpiar</button>
+        </section>
+
+
+
 
     </main>
     <footer><!--Comienzo footer-->
@@ -51,7 +71,7 @@
                         <a href="./register.html">REGISTRARSE</a>
                     </li>
                     <li>
-                        <a href="./login.html">LOGIN</a>
+                        <a href="./login.html">INGRESAR</a>
                     </li>
                     <li>
                         <a href="./contacto.html">CONTACTO</a>

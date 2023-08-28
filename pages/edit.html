@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,32 +12,58 @@
             
                 <a href="../home.html">
                 <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
-                <p>FUNKOSHOP</p>
                 </a>
             </picture>
             
             <ul>
                 <li>
-                    <a href="./shop.html">SHOP</a>
+                    <a href="./shop.html">VER TIENDA</a>
                 </li>
                 <li>
-                    <a href="./contacto.html">CONTACTO</a>
+                    <a href="./admin.html">ADMIN</a>
                 </li>
                 <li>
-                    <a href="./login.html">LOGIN</a>
+                    <a href="../home.html">SALIR</a>
                 </li>
-                <li>
-                    <a href="./carrito.html">
-                        <img src="../img/icons/cart-icon.svg" alt="Icono del carrito de compras">
-                    </a>
-                        
-                    </a>
-                </li>
+                
             </ul>
         </nav>
     </header> <!--Fin header-->
     <main>
-
+        <form action="">
+        <section>
+            <h2>EDITAR ITEM</h2>
+            
+            <div> 
+                <label for="cat">Categoria: </label><select name="cat" id="cat"> <option value="" disabled selected>Figuras</option></select>
+                <label for="license">Licencia: </label><select name="license" id="license"> <option value="" disabled selected>Naruto Shippuden</option></select>
+            </div>
+            <div>
+                <label for="nameproduct">Nombre del producto:</label><input type="text" id="nameproduct" placeholder="Kakashi Hatake Shippuden Saga">
+                
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori"></textarea>
+                
+                <label for="sku">SKU:</label><input type="text" id="sku" placeholder="NAR001012">
+                <label for="price">Precio:</label><input type="text" id="price" placeholder="1.7999,00">
+                <label for="stock">Stock:</label><input type="text" id="stock" placeholder="10">
+                <label for="discount">Descuento:</label><input type="text" placeholder="10%">
+                <label for="installment">Cuotas:</label><select name="installment" id="installment"> <option value="" disabled selected>6 Cuotas sin interés</option></select>
+                <label for="myFile">Imágenes:</label><input type="file" id="myFile" name="filename">
+            </div>
+            </section>
+    
+            <section>
+                <picture><img src="../img/naruto-shippuden/kakashi_hatake_front.svg" alt="Frente">
+                <figcaption>Frente</figcaption>
+                </picture>
+                <picture><img src="../img/naruto-shippuden/kakashi_hatake_back.svg" alt="Dorso">
+                <figcaption>Dorso</figcaption>
+                </picture>
+                <button type="submit">Modificar Producto</button>
+                
+            </section>
+        </form>
+    
     </main>
     <footer><!--Comienzo footer-->
 
@@ -51,7 +77,7 @@
                         <a href="./register.html">REGISTRARSE</a>
                     </li>
                     <li>
-                        <a href="./login.html">LOGIN</a>
+                        <a href="./login.html">INGRESAR</a>
                     </li>
                     <li>
                         <a href="./contacto.html">CONTACTO</a>
