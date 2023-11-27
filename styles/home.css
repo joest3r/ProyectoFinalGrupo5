@@ -87,10 +87,11 @@ img{
     margin: 0 auto;
 }
 
+/* HEADER */
 
 header{
     background-color: var(--dark-bg-solid);
-    padding:var(--spacing-36)
+    padding:var(--spacing-36);
 }
 .navbar{
     display:flex;
@@ -101,6 +102,7 @@ header{
 
 .navbar__logo{
     max-width: 300px;
+    
 }
 
 .navbar__menu{
@@ -128,7 +130,7 @@ header{
 }
 
 .with-submenu:hover .submenu{
-display: block;
+    display: block;
 }
 .submenu{
     display: none;
@@ -332,7 +334,19 @@ display: block;
     color: var(--secondary-solid);
     font-weight: 700;
 }
+/* FOOTER */
 
+.footer{
+background-color: var(--dark-bg-solid);
+padding: var(--spacing-68);
+}
+
+.footer__copy{
+    margin-top: var(--spacing-36);
+    text-align: center;
+
+}
+/* ANIMATIONS */
 @keyframes fade {
     0%{
         opacity: 0;
