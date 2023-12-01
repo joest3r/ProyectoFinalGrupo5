@@ -32,7 +32,7 @@
     --font-large: 2.4em;
     --font-medium:1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-xsmall: 1.4em;
 
     /* Spacings */
     --spacing-128: 12.8rem;
@@ -91,13 +91,13 @@ img{
 
 header{
     background-color: var(--dark-bg-solid);
-    padding:var(--spacing-36);
+    padding: var(--spacing-36);
 }
 .navbar{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-36);
+    
 }
 
 .navbar__logo{

@@ -91,13 +91,13 @@ img{
 
 header{
     background-color: var(--dark-bg-solid);
-    padding:var(--spacing-36);
+    padding: var(--spacing-36);
 }
 .navbar{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-36);
+   
 }
 
 .navbar__logo{

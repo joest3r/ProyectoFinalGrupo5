@@ -97,7 +97,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-36);
+   
 }
 
 .navbar__logo{
