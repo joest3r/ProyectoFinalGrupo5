@@ -97,7 +97,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-   
+    
 }
 
 .navbar__logo{
@@ -151,6 +151,29 @@ header{
 .submenu__link:hover{
     background-color: var(--primary-900);
 }
+/* MAIN */
+
+.login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 515px;
+    height: 289.13px;
+
+    
+}
+.login__title{
+
+    width: fit-content;
+    height: 49px;
+    
+}
+.login__form{
+    position: relative;
+    
+}
+
 
 
 /* FOOTER */

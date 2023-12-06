@@ -1,0 +1,19 @@
+.admin__create {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: var(--spacing-68) auto;
+    
+}
+
+
+.admin__create--form {
+    max-width: 827px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+

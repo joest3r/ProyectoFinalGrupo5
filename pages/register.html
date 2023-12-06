@@ -31,21 +31,47 @@
             </ul>
         </nav>
     </header> <!--Fin header-->
-    <main>
-        <h2>CREA TU CUENTA</h2>
-        <form action="">
-        <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-        <label for="name">Nombre:</label><input type="text" name="name" id="name" placeholder="John">
-        <label for="surname">Apellido:</label><input type="text" name="surname" id="surname"placeholder="Doe">
-        <label for="email">Email:</label><input type="email" id="email" placeholder="johndoe@correo.com">
-        <label for="pwd">Contraseña</label><input type="password" name="pwd" id="pwd" placeholder="*********" >
-        <label for="rpwd">Repetir Contraseña</label><input type="repassword" name="rpwd" id="rpwd" placeholder="*********" >
-        <div>
-        <button type="submit">Registrar</button>
-        <input type="checkbox" name="terms" id="terms"><label for="terms">Acepto <a href="">Términos y Condiciones</a></label>
-        </div>
-    </form>
+    <main class="register container">
+        <section class="register__box">
+        <h2 class="register__box--title">CREA TU CUENTA</h2>
+        <p class="register__box--register">Completa el formulario para ser parte del mundo de los Funkos</p>
+
+        <form class="register__box--form" action=""
+            method="post">
+            <div class="box__form--item">
+                <label for="name" class="box__form--label">Nombre:</label>
+                <input class="box__form--input" type="text" name="name" id="name" placeholder="John">
+            </div>
+            <div class="box__form--item">
+                <label for="last-name" class="box__form--label">Apellido:</label>
+                <input class="box__form--input" type="text" name="last-name" id="last-name" placeholder="Doe">
+            </div>
+            <div class="box__form--item">
+                <label for="email" class="box__form--label">Email:</label>
+                <input class="box__form--input" type="email" name="email" id="email" placeholder="johndoe@correo.com">
+            </div>
+            <div class="box__form--item">
+                <label for="password" class="box__form--label">Contraseña:</label>
+                <input class="box__form--input" type="password" name="password" id="password" placeholder="●●●●●●●●●">
+            </div>
+            <div class="box__form--item">
+                <label for="repeat-password" class="box__form--label">Repita Contraseña:</label>
+                <input class="box__form--input" type="password" name="repeat-password" id="repeat-password"
+                    placeholder="●●●●●●●●●">
+            </div>
+            <div class="box__form--submit">
+                <input class="box__form--btn" type="submit" value="Registrar">
+                <div class="box__form--remember">
+                    <input class="box__form--login" type="checkbox" name="remember" id="remember">
+                    <label class="box__form--checkbox" for="accept">Acepto 
+                        <a href=""><span class="terms">Téminos y Condiciones</span></a>
+                    </label>
+                </div>
+            </div>
+        </form>
+        </section>
     </main>
+
     
     <footer class="footer"><!--Comienzo footer-->
 
