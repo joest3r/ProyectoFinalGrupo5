@@ -1,0 +1,29 @@
+.form__input{
+    border: 0;
+    border-bottom: 2px red;
+    }
+    .form__label{
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: var(--font-medium);
+    line-height: 29.05px;
+    }
+    .form__title{
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: var(--font-jumbo);
+    line-height: 49.31px;
+    
+    }
+    
+    .form__button{
+    width: 175px;
+    }
+    
+    .form__select{
+    border: 2px solid; 
+    }
+    
+    .form__textarea{
+        width: 100%;
+    }
