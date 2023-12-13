@@ -5,9 +5,11 @@
     faqs: (req,res) => res.send('Routes for Faqs View')
 }*/
 
+const fs = require("fs");
+const funkoShopJSON = JSON.parse(fs.readFileSync("../../funkoshop.json"));
 
 module.exports = {
     index: (req,res)=>{
-        res.render("index",{})
+        res.render("index",{title:"FunkoShop | Home ",funkoshop:funkoShopJSON})
     }
 }

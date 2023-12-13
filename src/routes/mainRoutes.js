@@ -3,13 +3,6 @@ const router = express.Router();
 const {index} = require('../controllers/mainControllers.js');
 
 
-/*
-router.get('/home', mainControllers.home);
-router.get('/contact', mainControllers.contact);
-router.get('/about', mainControllers.about);
-router.get('/faqs', mainControllers.faqs);
-*/
-
 router.get("/",index)
 
 module.exports = router;
