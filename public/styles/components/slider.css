@@ -15,11 +15,13 @@
 }
 
 iconify-icon {
-    background-color: var(--dark-bg-solid);
+    /*background-color: var(--dark-bg-solid);*/
     font-size: var(--font-smail);
     font-weight: 700;
 }
-
+.glide__arrow{
+    color:var(--dark-bg-solid);
+}
 .glide__arrow--left{
     left:0;
 }
