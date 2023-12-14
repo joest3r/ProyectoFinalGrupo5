@@ -19,7 +19,7 @@ app.use (express.static(path.join(__dirname,"public")));
 //Rutas
 
 app.use("/", mainRoutes);
-app.use("/admin", authRoutes);
+app.use("/auth", authRoutes);
 app.use("/admin", adminRoutes);
 app.use("/shop", shopRoutes);
 
