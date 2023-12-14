@@ -4,9 +4,10 @@ const router = express.Router();
 const {shop,carrito} = require('../controllers/shopControllers.js');
 
 router.get('/', shop);
-//router.get('/item/:id',shopControllers.shopItem);
-//router.post('/item/:id/add', shopControllers.shopItemAddPOST)
-//router.post('/cart', shopControllers.shopCartPOST);
+//router.get('/item/:id',item);
 router.get('/carrito', carrito);
+//router.post('/item/:id/add', item)
+//router.post('/carrito', carrito);
+
 
 module.exports = router;
