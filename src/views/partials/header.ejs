@@ -2,22 +2,39 @@
     <nav class="navbar container" >
         <picture class="navbar__logo">
         
-            <a href="../home.html">
-            <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+            <a href="#">
+            <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
         
             </a>
         </picture>
 
         <ul class="navbar__menu">
             <li class="navbar__item with-submenu">
-                <a class="navbar__link " href="shop.html">VER TIENDA</a>
-                
+                <a class="navbar__link with-icon" href="../pages/shop/shop.ejs">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Llaveros</a>
+                    </li>
+                </ul>
             </li>
             <li class="navbar__item">
-                <a class="navbar__link" href="admin.html">ADMIN</a>
+                <a class="navbar__link" href="">CONTACTO</a>
             </li>
             <li class="navbar__item">
-                <a class="navbar__link" href="../home.html">SALIR</a>
+                <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__cart" href="./pages/shop/carrito.html">
+                    <img src="./img/icons/cart-icon.svg" alt="Icono del carrito de compras">
+                </a>
+                    
+                </a>
             </li>
         </ul>
     </nav>
