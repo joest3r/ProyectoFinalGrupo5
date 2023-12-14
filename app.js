@@ -9,10 +9,10 @@ const app = express(); // instancia express configurada
 const mainRoutes = require("./src/routes/mainRoutes");//Requiero mi archivo de rutas
 const authRoutes = require("./src/routes/authRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
-const shopRoutes = require("./src/routes/authRoutes");
+const shopRoutes = require("./src/routes/shopRoutes");
 
 /* Motor de Plantillas EJS */
-app.set("views", path.join(__dirname, "./src/views/pages" ));
+app.set("views", path.join(__dirname, "src/views" ));
 app.set("view engine" , "ejs");
 app.use (express.static(path.join(__dirname,"public")));
 
