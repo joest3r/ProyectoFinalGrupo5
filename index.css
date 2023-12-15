@@ -1,0 +1,199 @@
+/* EXTERNALS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
+
+
+/* MISCELANEOUS */
+@import url("./misc/variables.css");
+@import url("./misc/animation.css");
+@import url("./pages/shop/carrito.css");
+@import url("./misc/normalize.css");
+
+/* PARTIALS*/
+@import url("./partials/header.css");
+@import url("./partials/footer.css");
+
+/* COMPONENTS*/
+@import url("./components/card.css");
+@import url("./components/hero.css");
+@import url("./components/slider.css");
+@import url("./components/form.css");
+
+/* PAGES */
+@import url("pages/shop/item.css");
+@import url("pages/shop/carrito.css");
+@import url("pages/admin/login.css");
+@import url("pages/admin/register.css");
+@import url("pages/shop.css");
+@import url("pages/admin/admin.css");
+@import url("pages/admin/create.css");
+@import url("pages/admin/edit.css");
+
+
+/* Collections */
+
+.collection{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: var(--spacing-16) 0;
+}
+.collection:nth-child(2) .collection__cover{
+    order: -1;
+}
+
+.collection__content {
+    display:flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    
+
+}
+
+.collection__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+
+.collection__text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spacing-20);
+}
+
+.collection__link{
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background .3s ease-in-out;
+}
+
+.collection__link:hover{
+    background-color: var(--primary-900);
+}
+
+
+
+
+
+
+/* PAGINATION */
+
+
+.pagination__list{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 50px;
+}
+
+.pagination__list li{
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+    width:44px;
+    height: 44px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+    line-height: 44px; 
+    transition: all .2s ease-in-out;
+}
+
+/* pagination hover effect on non-active */
+.pagination__list li:hover:not(.active){
+    background-color: #031F3B;
+    color: var(--light-font-solid);
+}
+
+/* pagination hover effect on active*/
+.pagination__list li:nth-child(2) {
+    color: var(--primary-solid);
+}
+
+.pagination__list li:nth-child(1) {
+    background-color: #919eab8b;
+    color:#e0e3e6;
+}
+
+.pagination__list li:nth-child(7) {
+    background-color: var(--light-font-solid);
+    color:#C4CDD5;
+}
+
+.row {
+    padding: 55px 0;
+    display: flex;
+    gap: 2%;
+}
+
+.catalogue__grilla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+
+
+/*CAROUSEL MALENA*/
+
+
+.carousel__contenedor {
+	position: relative;
+}
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #000;
+	opacity: 20%;
+}
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+.carousel__anterior {
+	left: -30px;
+}
+.carousel__siguiente {
+	right: -30px;
+}
+.carousel__lista {
+
+	overflow: hidden;
+}
+.carousel__elemento {
+	text-align: center;
+}
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #000;
+	opacity: .2;
+	border-radius: 0;
+}
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
