@@ -9,4 +9,3 @@ module.exports = {
     //adminDELETEID: (req,res) => res.send('Route for admin delete')
 }
 
- 

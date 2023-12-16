@@ -69,11 +69,11 @@
                 <table>
                     <tr>
                         <td>CANTIDAD DE ELEMENTOS</td>
-                        <td>2</td>
+                        <td id="cant_elem">2</td>
                     </tr>
                     <tr>
                         <td>SUBTOTAL</td>
-                        <td>$5399.97</td>
+                        <td id="subtotal">$5399.97</td>
                     </tr>
                     <tr>
                         <td>ENVÍO</td>
@@ -81,7 +81,7 @@
                     </tr>
                     <tr class="resume-total">
                         <td >TOTAL</td>
-                        <td>$5399.97</td>
+                        <td id="total">$5399.97</td>
                     </tr>
                 </table>
                 <input type="button" value="IR A PAGAR">
@@ -89,5 +89,6 @@
         </section>
     </main>
     <%-include("./partials/footer") %>
+    <script src="/js/carrito.js"></script>
 </body>
 </html>
