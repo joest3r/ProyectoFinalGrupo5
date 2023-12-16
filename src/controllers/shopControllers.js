@@ -9,10 +9,8 @@ module.exports = {
 
         funkoJSON.forEach((funko) => {
             if(id == funko.product_id) {
-                res.render("item",{title:"Item | FunkoShop",funko:funko}
-                )
-        }
-        })},
+                res.render("item",{title:"Item | FunkoShop",funko:funkoJSON})}})},
+                
     //itemPOST: (req,res) => {res.render("item",{title:"Item | FunkoShop"})},
     //carritoPOST: (req,res) => {res.render('carrito",{title:"Carrito | FunkoShop')},
     carrito: (req,res) => {res.render("carrito",{title:"Carrito | FunkoShop"})}
