@@ -8,5 +8,7 @@ module.exports = {
     index: (req, res) => {
         res.render("index", { title: "Home | FunkoShop", funko: funkoJSON })
     },
-
+    contacto: (req,res) => {
+        res.render("contacto",{title: "Contacto | FunkoShop"})
+    }
 }
