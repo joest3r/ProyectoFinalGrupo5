@@ -1,71 +1,72 @@
-.register__box{
+/* ESTILOS PARA REGISTER.EJS */
+
+.register__box {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
     align-items: center;
     justify-content: center;
-    margin: var(--spacing-68) ;
+    margin: var(--spacing-68);
     max-width: 1023px;
-    
+
 }
 
-.register__box--title{
+.register__box--title {
     font-family: var(--alternative-font);
     font-weight: 700;
     font-size: var(--font-jumboplus);
-    color:var(--dark-solid);
+    color: var(--dark-solid);
 }
 
-.register__box--register{
-    
-    
+.register__box--register {
     justify-content: space-between;
     font-family: var(--alternative-font);
     font-weight: 500;
     font-size: var(--font-xlarge);
     letter-spacing: 0.12rem;
-    color:var(--dark-solid);
+    color: var(--dark-solid);
 }
-.register__box--form{
+
+.register__box--form {
 
     max-width: 457.2px;
 }
-.box__form--item{
+
+.box__form--item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-36);
     margin: var(--spacing-20);
-    
-    
-
 }
-.box__form--label{
+
+.box__form--label {
     font-family: var(--base-font);
     font-size: var(--font-medium);
     font-weight: 400;
 }
 
-.box__form--input{
+.box__form--input {
     border-style: none;
     border-bottom: 2px solid var(--primary-solid);
-    font-family: var(--base-font) ;
+    font-family: var(--base-font);
     font-size: var(--font-small);
     font-weight: 400;
-    width:200px;
-    
+    width: 200px;
+
 }
 
-.box__form--submit{
+.box__form--submit {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin: var(--spacing-36);
-    
+
 }
-.box__form--btn{
+
+.box__form--btn {
     width: 103px;
     height: 39.6px;
     font-family: var(--base-font);
@@ -73,14 +74,16 @@
     font-weight: 400;
     font-size: var(--font-xsmall);
     border: 0;
-    background-color: var(--primary-solid) ;
+    background-color: var(--primary-solid);
     color: var(--light-font-solid);
 }
-.box__form--remember{
+
+.box__form--remember {
     font-family: var(--base-font);
     font-weight: 400;
-    font-size: var(--font-small) ;
+    font-size: var(--font-small);
 }
-.terms{
-        color:var(--secondary-solid);
-    }
+
+.terms {
+    color: var(--secondary-solid);
+}

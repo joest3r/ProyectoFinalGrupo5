@@ -1,10 +1,12 @@
+/* ESTILOS PARA LA VISTA CREATE.EJS */
+
 .admin__create {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     margin: var(--spacing-68) auto;
-    
+
 }
 
 
@@ -14,6 +16,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    
-}
 
+}

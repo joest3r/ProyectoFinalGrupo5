@@ -1,2 +1,14 @@
 
-Solucionado Tema de Routing
+INTEGRANTES FINALES DEL GRUPO 5
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+AMIGO, MACARENA
+BILIC, NICOLÁS
+CASTILLO QUINTEROS, MARIA ELENA
+LUI, FRANCO
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+

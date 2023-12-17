@@ -1,4 +1,6 @@
-.error{
+/* ESTILO PARA LA PAGINA ERROR.EJS */
+
+.error {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,49 +1,55 @@
-.admin__search{
+/* ESTILOS PARA LA VISTA ADMIN.EJS*/
+
+.admin__search {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: var(--spacing-36) 0 ;
+    margin: var(--spacing-36) 0;
     width: 1126px;
-    
+
 }
-.admin__products{
-   
+
+.admin__products {
+
     width: 1126px;
 }
 
 
-.admin__search--icon{
+.admin__search--icon {
     height: 42px;
     width: 42px;
 }
 
-.admin__search--input{
+.admin__search--input {
     border-radius: 6px;
 }
-.admin__add{
+
+.admin__add {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
 }
-.admin__add--title{
+
+.admin__add--title {
     font-family: var(--base-font);
     font-size: var(--font-display);
 }
+
 .admin__add--icon {
     height: 52px;
     width: 52px;
 }
 
-.admin__products--table{
+.admin__products--table {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    
-   
+
+
     justify-content: center;
-    
-   
+
+
     font-size: 24px;
     font-weight: 500;
 }

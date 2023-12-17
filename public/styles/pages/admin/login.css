@@ -1,9 +1,7 @@
+/* ESTILO PARA LOGIN.EJS */
 
-
-/* MAIN */
-
-.login__content{
-    display:flex;
+.login__content {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,16 +9,9 @@
     width: 515px;
     height: 289.13px;
     font-family: var(--base-font);
-
-    
 }
-.login__title{
 
+.login__title {
     width: fit-content;
     height: 49px;
-    
 }
-
-
-
-

@@ -1,4 +1,3 @@
-
 .item {
     display: grid;
     column-gap: 65px;
@@ -68,7 +67,7 @@
     transition: background 0.7;
 }
 
-.item__button-group:hover{
+.item__button-group:hover {
     background-color: #90031b;
 }
 

@@ -1,97 +1,104 @@
+<!-- VISTA DEL SHOP -->
+
 <%-include("./partials/head")%>
+
 <body>
-    <%-include("./partials/header")%>
-    <div class="row container">
-    <aside> <!-- Inicio Aside -->
-        <form action="" class="form">
-            <div class="form__group">
-                <label class="form__group--denomination" for="search">BUSCAR</label>
-                <input class="form__group--search" id="search" type="text" name="search" placeholder="Item / Categoría"/>
-            </div>
-            <div class="form__group">
-                <label class="form__group--denomination" for="short_by">ORDENAR POR</label>
-                <select class="form__group--order" id="short_by" name="short_by">
-                    <option value="0">Mayor a menor</option>
-                    <option value="1">Precio</option>
-                    <option value="2">Orden de salida</option>
-                    <option value="3">Descuentos</option>
-                </select>
-            </div>
-            <fieldset class="form__group">
-                <legend class="form__group--denomination">PRECIO</legend>
-                <div class="form__group--content">
-                    <label class="form__group--indicator">MIN
-                        <input class="form__group--limit" type="text" id="min" name="price" min="0" placeholder="0">
-                    </label>
-                    <label class="form__group--indicator">- MAX
-                        <input class="form__group--limit" type="text" id="max" name="price" min="0" placeholder="0">
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset class="form__group">
-                <legend class="form__group--denomination">FILTRAR</legend>
-                <div>
-                    <label class="form__group--indicator">
-                        <input class="form__group--check" type="checkbox" id="filter-1" name="filter" value="1">NUEVOS
-                    </label>
-                    <label class="form__group--indicator">
-                        <input class="form__group--check" type="checkbox" id="filter-2" name="filter" value="2">OFERTAS
-                    </label>
-                    <label class="form__group--indicator">
-                        <input class="form__group--check" type="checkbox" id="filter-3" name="filter" value="3">EDICION ESPECIAL
-                    </label>
-                    <label class="form__group--indicator">
-                        <input class="form__group--check" type="checkbox" id="filter-4" name="filter" value="4">FAVORITOS
-                    </label>
-                </div>
-            </fieldset>
-        </form>
+  <%-include("./partials/header")%>
+  <div class="row container">
+    <aside>
+      <!-- Inicio Aside -->
+      <form action="" class="form">
+        <div class="form__group">
+          <label class="form__group--denomination" for="search">BUSCAR</label>
+          <input class="form__group--search" id="search" type="text" name="search" placeholder="Item / Categoría" />
+        </div>
+        <div class="form__group">
+          <label class="form__group--denomination" for="short_by">ORDENAR POR</label>
+          <select class="form__group--order" id="short_by" name="short_by">
+            <option value="0">Mayor a menor</option>
+            <option value="1">Precio</option>
+            <option value="2">Orden de salida</option>
+            <option value="3">Descuentos</option>
+          </select>
+        </div>
+        <fieldset class="form__group">
+          <legend class="form__group--denomination">PRECIO</legend>
+          <div class="form__group--content">
+            <label class="form__group--indicator">MIN
+              <input class="form__group--limit" type="text" id="min" name="price" min="0" placeholder="0">
+            </label>
+            <label class="form__group--indicator">- MAX
+              <input class="form__group--limit" type="text" id="max" name="price" min="0" placeholder="0">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__group">
+          <legend class="form__group--denomination">FILTRAR</legend>
+          <div>
+            <label class="form__group--indicator">
+              <input class="form__group--check" type="checkbox" id="filter-1" name="filter" value="1">NUEVOS
+            </label>
+            <label class="form__group--indicator">
+              <input class="form__group--check" type="checkbox" id="filter-2" name="filter" value="2">OFERTAS
+            </label>
+            <label class="form__group--indicator">
+              <input class="form__group--check" type="checkbox" id="filter-3" name="filter" value="3">EDICION ESPECIAL
+            </label>
+            <label class="form__group--indicator">
+              <input class="form__group--check" type="checkbox" id="filter-4" name="filter" value="4">FAVORITOS
+            </label>
+          </div>
+        </fieldset>
+      </form>
     </aside> <!-- Fin Aside -->
 
-    <main> <!-- Inicio Main -->
+    <main>
+      <!-- Inicio Main -->
 
-        <section class="catalogue">
-            <ul class="catalogue__grilla">
-                
-                <%funko.forEach(funko=>{%>
-                <li class="catalogue__product">
-                    <article class="card-item">
-                        <a class="card-item__link" href="/shop/item/<%=funko.product_id%>">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">Nuevo
-                                </span>
-                                <img class="card-item__img--front" src="<%=funko.img_front%>"
-                                    alt="Figura coleccionable Funko de un Stormtrooper de la serie Star Wars">
-                                <img class="card-item__img--back" src="<%=funko.img_back%>" >
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence"><%=funko.licence_name%></p>
-                                <h4 class="card-item__name"><%=funko.product_name%></h4>
-                                <p class="card-item__price">$ <%=funko.product_price %></p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-                <%}) %>
-            </ul>
-        </section>
+      <section class="catalogue">
+        <ul class="catalogue__grilla">
 
-        <section>
-            <ul class="pagination__list">
-                <li><a href="#"><</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">></a></li>
-            </ul>
-        </section>
+          <%funko.forEach(funko=>{%>
+          <li class="catalogue__product">
+            <article class="card-item">
+              <a class="card-item__link" href="/shop/item/<%=funko.product_id%>">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo
+                  </span>
+                  <img class="card-item__img--front" src="<%=funko.img_front%>" alt="Figura coleccionable Funko de un Stormtrooper de la serie Star Wars">
+                  <img class="card-item__img--back" src="<%=funko.img_back%>">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence"><%=funko.licence_name%></p>
+                  <h4 class="card-item__name"><%=funko.product_name%></h4>
+                  <p class="card-item__price">$ <%=funko.product_price %></p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <%}) %>
+        </ul>
+      </section>
+
+      <section>
+        <ul class="pagination__list">
+          <li><a href="#">
+              << /a>
+          </li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">></a></li>
+        </ul>
+      </section>
 
     </main> <!-- Fin Main -->
-    </div>
-    <%-include("./partials/footer")%>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-    </body>
-    </html>
+  </div>
+  <%-include("./partials/footer")%>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,7 @@
+/* CARRITO */
+
+
+/* Defino los query selector para modificar atributos en el html */
 const more1 = document.querySelector('#more1');
 const less1 = document.querySelector('#less1');
 const quantity1 = document.querySelector('#quantity1');
@@ -12,15 +16,27 @@ const less2 = document.querySelector('#less2');
 const quantity2 = document.querySelector('#quantity2');
 const price2 = document.querySelector('#price2');
 
+/* Lógica para variar los precios en la pagina Carrito */
 
+/* Agregar */
 
-more1.addEventListener('click', () => {
+more1.addEventListener('click', () => { 
     quantity1.value = Number(quantity1.value) + 1;
 
     price1.innerHTML = "$ " + Number(quantity1.value) * 1799.99;
 
     subtotal.innerHTML = "$ " + (price1.innerHTML);
 });
+
+more2.addEventListener('click', () => {
+    quantity2.value = Number(quantity2.value) + 1;
+
+    price2.innerHTML = "$ " + Number(quantity2.value) * 1799.99;
+
+    subtotal.innerHTML = "$ " + (price2.innerHTML);
+});
+
+/* Sustraer */
 
 less1.addEventListener('click', () => {
     if (quantity1.value != 0) {
@@ -31,13 +47,6 @@ less1.addEventListener('click', () => {
     }
 });
 
-more2.addEventListener('click', () => {
-    quantity2.value = Number(quantity2.value) + 1;
-
-    price2.innerHTML = "$ " + Number(quantity2.value) * 1799.99;
-
-    subtotal.innerHTML = "$ " + (price2.innerHTML);
-});
 
 less2.addEventListener('click', () => {
     if (quantity2.value != 0) {

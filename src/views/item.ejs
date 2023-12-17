@@ -1,73 +1,80 @@
+<!-- VISTA DEL ITEM -->
+
 <%-include("./partials/head")%>
+
 <body>
-    <%-include("./partials/header")%>
-<main class="container"> <!-- Inicio Main -->
+  <%-include("./partials/header")%>
+  <main class="container">
+    <!-- Inicio Main -->
     <section class="item">
-        <picture class="card-item__cover">
-            <img class="card-item__img--front" src="<%=imagenfFunko%>"
-                alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
-            <img class="card-item__img--back" src="<%=imagenbFunko%>"
-                alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian-Package">
-        </picture>
-        <article class="item__info">
-            <p class="item__licence"><%=licenciaFunko%></p>
-            <h3 class="item__name"><%=nombreFunko%></h3>
-            <p class="item__description"><%=descripcionFunko%></p>
-            <p class="item__price">$ <%=precioFunko%></p>
-            <form class="item__cart">
-                <div class="item__imput">
-                    <input class="item__text" type="text" name="quantity" id="quantity" placeholder="0">
-                    <span class="item__button">
-                        <button id="add" class="item__button-group" type="button">+</button>
-                        <button id="subtract" class="item__button-group" type="button">-</iconify-icon></button>
-                    </span>
-                </div>
-                <button class="item__submit" type="submit">Agregar al carrito</button>
-            </form>
-            <p class="item__promo">
-                <a class="item__promo--link" href="./shop.html">Ver métodos de pago</a>
-                - 3 CUOTAS SIN INTERÉS
-            </p>
-        </article>
+      <picture class="card-item__cover">
+        <img class="card-item__img--front" src="<%=imagenfFunko%>" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
+        <img class="card-item__img--back" src="<%=imagenbFunko%>" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian-Package">
+      </picture>
+      <article class="item__info">
+        <p class="item__licence"><%=licenciaFunko%></p>
+        <h3 class="item__name"><%=nombreFunko%></h3>
+        <p class="item__description"><%=descripcionFunko%></p>
+        <p class="item__price">$ <%=precioFunko%></p>
+        <form class="item__cart">
+          <div class="item__imput">
+            <input class="item__text" type="text" name="quantity" id="quantity" placeholder="0">
+            <span class="item__button">
+              <button id="add" class="item__button-group" type="button">+</button>
+              <button id="subtract" class="item__button-group" type="button">-</iconify-icon></button>
+            </span>
+          </div>
+          <button class="item__submit" type="submit">Agregar al carrito</button>
+        </form>
+        <p class="item__promo">
+          <a class="item__promo--link" href="./shop.html">Ver métodos de pago</a>
+          - 3 CUOTAS SIN INTERÉS
+        </p>
+      </article>
     </section>
-    
+
     <section class="slider container glide">
 
-        <h2 class="slider__title">Últimos lanzamientos</h2>
+      <h2 class="slider__title">Últimos lanzamientos</h2>
 
-        <div class="glide__track" data-glide-el="track">
+      <div class="glide__track" data-glide-el="track">
 
         <ul class="slider__items glide__slides">
-            <%funko.forEach(funko=>{%>
-            <li class="slider__item glide__slide">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <span class="card-item__tag">Nuevo</span>
-                            <img class="card-item__img--front" src="<%=funko.img_front%>" alt="<%=funko.product_name%>">
-                            <img class="card-item__img--back" src="<%=funko.img_back%>" alt="<%=funko.product_name%>">
-                        </picture>
-                        <div class="card-item__content">
-                            <p  class="card-item__license"><%=funko.licence_name%></p>
-                            <h4  class="card-item__name"><%=funko.product_name%></h4>
-                            <p class="card-item__price">$<%=funko.product_price%> -</p>
-                            <p class="card-item__promo">3 COUTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <%}) %>
+          <%funko.forEach(funko=>{%>
+          <li class="slider__item glide__slide">
+            <article class="card-item">
+              <a class="card-item__link" href="">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img class="card-item__img--front" src="<%=funko.img_front%>" alt="<%=funko.product_name%>">
+                  <img class="card-item__img--back" src="<%=funko.img_back%>" alt="<%=funko.product_name%>">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license"><%=funko.licence_name%></p>
+                  <h4 class="card-item__name"><%=funko.product_name%></h4>
+                  <p class="card-item__price">$<%=funko.product_price%> -</p>
+                  <p class="card-item__promo">3 COUTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <%}) %>
         </ul>
-        </div>
-        <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="tabler:chevron-left"></iconify-icon></button>
-            <button class="glide__arrow glide__arrow--right"data-glide-dir=">"><iconify-icon icon="tabler:chevron-right"></iconify-icon></button>
-        </div>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <iconify-icon icon="tabler:chevron-left"></iconify-icon>
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <iconify-icon icon="tabler:chevron-right"></iconify-icon>
+        </button>
+      </div>
     </section>
-</main> <!-- Fin Main -->
-<%-include("./partials/footer")%>
-<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-<script src="/js/glide.js"></script>
+  </main> <!-- Fin Main -->
+  <%-include("./partials/footer")%>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="/js/glide.js"></script>
 </body>
+
 </html>

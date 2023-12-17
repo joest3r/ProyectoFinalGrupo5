@@ -1,6 +1,6 @@
-/* SLIDER */
+/* SLIDER CARROUSEL INDEX.EJS y ITEM.EJS */
 
-.slider{
+.slider {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
@@ -8,24 +8,25 @@
 
 }
 
-.slider__title{
+.slider__title {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     text-transform: uppercase;
 }
 
 iconify-icon {
-    /*background-color: var(--dark-bg-solid);*/
     font-size: var(--font-smail);
     font-weight: 700;
 }
-.glide__arrow{
-    color:var(--dark-bg-solid);
-}
-.glide__arrow--left{
-    left:0;
+
+.glide__arrow {
+    color: var(--dark-bg-solid);
 }
 
-.glide__arrow--right{
-    right:0;
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
 }

@@ -13,7 +13,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    
+
 }
 
 
@@ -29,7 +29,7 @@ button {
     text-transform: uppercase;
     border-bottom: 5px solid var(--primary-solid);
     width: max-content;
-    
+
 }
 
 .info {
@@ -100,16 +100,18 @@ button {
     font-style: normal;
     line-height: normal;
 }
-.cart-item__desc{
+
+.cart-item__desc {
     max-width: 410px;
 }
+
 .cart-item article h3 {
-    
+
     color: --dark-solid;
     font-size: var(--font-large);
     font-weight: 700;
     margin-bottom: 5px;
-    
+
 }
 
 .cart-item article p {
@@ -150,7 +152,8 @@ button {
     justify-content: space-between;
 }
 
-.more, .less {
+.more,
+.less {
     width: 16px;
     height: 16px;
     border: none;
@@ -160,7 +163,8 @@ button {
     font-style: bold;
 }
 
-.more:active, .less:active {
+.more:active,
+.less:active {
     background-color: rgb(160, 32, 0);
 }
 
@@ -183,14 +187,15 @@ button {
 .resume-cart {
     display: flex;
     gap: var(--spacing-20);
-    margin: var(--spacing-68) 0; 
+    margin: var(--spacing-68) 0;
     align-self: flex-end;
     flex-direction: column;
     width: 100%;
     max-width: 572px;
 
 }
-.resume-cart h2{
+
+.resume-cart h2 {
     align-self: flex-end;
 }
 
@@ -227,14 +232,16 @@ button {
 .resume-cart td:last-child {
     color: #747474;
     font-weight: 700;
-    
+
 }
-.resume-total{
+
+.resume-total {
     font-size: var(--font-xsmall);
     padding-top: 8px;
     border-top: 2px solid var(--primary-solid);
     width: 100%;
 }
+
 .resume-cart input {
     width: 100%;
     max-width: 572px;
@@ -253,5 +260,5 @@ button {
 }
 
 .resume-cart input:hover {
-    background-color: var( --primary-solid);
+    background-color: var(--primary-solid);
 }

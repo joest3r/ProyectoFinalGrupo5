@@ -1,39 +1,46 @@
+/* NORMALIZADOR PARA TODAS LAS VISTAS */
+
 *,
 *::before,
-*::after{
-    margin:0;
+*::after {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: var(--base-font);
     font-size: 62.5%;
     color: var(--dark-solid);
 }
 
-a{
+a {
     text-decoration: none;
-    
+
     font-family: inherit;
-    color:inherit;
+    color: inherit;
 }
 
-header,footer{
+header,
+footer {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
 }
-ul,ol{
+
+ul,
+ol {
     list-style-type: none;
 }
-p{
+
+p {
     font-size: 1.8em;
 }
 
-img{
+img {
     width: 100%;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }

@@ -1,3 +1,5 @@
+/* CSS PRINCIPAL QUE SE APLICA A TODAS LAS VISTAS */
+
 /* EXTERNALS */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700');
@@ -35,31 +37,32 @@
 
 /* Collections */
 
-.collection{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: var(--spacing-16) 0;
 }
-.collection:nth-child(2) .collection__cover{
+
+.collection:nth-child(2) .collection__cover {
     order: -1;
 }
 
 .collection__content {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: var(--spacing-24);
-    
+
 
 }
 
-.collection__title{
+.collection__title {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     font-weight: 500;
 }
 
-.collection__text{
+.collection__text {
     font-family: var(--alternative-font);
     font-size: var(--font-large);
     font-weight: 300;
@@ -67,7 +70,7 @@
     padding-bottom: var(--spacing-20);
 }
 
-.collection__link{
+.collection__link {
     display: inline-block;
     font-size: var(--font-medium);
     background-color: var(--dark-bg-solid);
@@ -78,7 +81,7 @@
     transition: background .3s ease-in-out;
 }
 
-.collection__link:hover{
+.collection__link:hover {
     background-color: var(--primary-900);
 }
 
@@ -90,28 +93,28 @@
 /* PAGINATION */
 
 
-.pagination__list{
+.pagination__list {
     display: flex;
     justify-content: center;
     gap: 8px;
     padding-top: 50px;
 }
 
-.pagination__list li{
+.pagination__list li {
     color: var(--dark-bg-solid);
     font-size: var(--font-small);
     font-weight: 700;
-    width:44px;
+    width: 44px;
     height: 44px;
     text-align: center;
     border: 1px solid;
     border-radius: 4px;
-    line-height: 44px; 
+    line-height: 44px;
     transition: all .2s ease-in-out;
 }
 
 /* pagination hover effect on non-active */
-.pagination__list li:hover:not(.active){
+.pagination__list li:hover:not(.active) {
     background-color: #031F3B;
     color: var(--light-font-solid);
 }
@@ -123,12 +126,12 @@
 
 .pagination__list li:nth-child(1) {
     background-color: #919eab8b;
-    color:#e0e3e6;
+    color: #e0e3e6;
 }
 
 .pagination__list li:nth-child(7) {
     background-color: var(--light-font-solid);
-    color:#C4CDD5;
+    color: #C4CDD5;
 }
 
 .row {
@@ -137,8 +140,8 @@
     gap: 2%;
 }
 
-.catalogue__grilla{
+.catalogue__grilla {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }

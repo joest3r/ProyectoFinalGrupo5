@@ -1,6 +1,8 @@
+/* ROUTER PARA ADMIN */
+
 const express = require('express');
 const router = express.Router();
-const {admin,create} = require('../controllers/adminControllers.js');
+const { admin, create } = require('../controllers/adminControllers.js');
 router.get('/', admin);
 router.get('/create', create);
 //router.post('/create', adminControllers.admincreatePOST);
